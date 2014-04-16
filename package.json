@@ -1,17 +1,17 @@
 {
     "name": "path-to-regexp-wrap",
-    "version": "0.1",
-    "author": "Andrew Teologov <teologov.and@gmail.com>",
+    "version": "0.0.1",
+    "author": "Andrew Teologov <teologov.and@gmail.com> (http://teologov.me/)",
     "description": "Wrapper for Express.js 'path-to-regexp' module",
     "repository": {
         "type": "git",
         "url": "https://github.com/teologov/path-to-regexp-wrap.git"
     },
     "keywords": [
-        "routes",
-        "regexp",
-        "path"
-    ],
+                 "route",
+                 "regexp",
+                 "path"
+                 ],
     "component": {
         "scripts": {
             "path-to-regexp-wrap": "index.js"
@@ -20,5 +20,9 @@
     "dependencies": {
         "path-to-regexp":  "*"
     }
-    "license": "MIT"
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/teologov/path-to-regexp-wrap/issues"
+    },
+    "homepage": "https://github.com/teologov/path-to-regexp-wrap"
 }
