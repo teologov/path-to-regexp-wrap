@@ -4,7 +4,7 @@ It's a simple wrapper of original [path-to-regexp] (https://github.com/component
 ### Usage
 
 ```
-var path = require('./index')(),    // options object could be passed as well 
+var path = require('path-to-regexp-wrap')(),    // options object could be passed as well 
     route = '/get/:id',
     match = path(route);
 
