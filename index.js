@@ -11,6 +11,7 @@ var path = require( 'path-to-regexp' );
  * @type {exports}
  */
 exports = module.exports = function( options ) {
+    options = options || {};
     options.sensitive = options.sensitive || false;
     options.strict = options.strict || false;
     options.end = options.end || false;
@@ -40,10 +41,12 @@ exports = module.exports = function( options ) {
             if ( !res )
                 return false;
             
-            for ( var i = 0, l = res.length; i < l; i++ ) {
+            for ( var i = 1, l = res.length; i < l; i++ ) {
+                
                 if ( res[ i ] === undefined )
                     continue;
-                params[ keys[ i ].name ] = decodeUri( res[ i ]);
+                
+                params[ keys[ i - 1 ].name ] = decodeUri( res[ i ]);
             }
             
             return params;
