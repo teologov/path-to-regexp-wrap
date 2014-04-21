@@ -12,9 +12,6 @@ var path = require( 'path-to-regexp' );
  */
 exports = module.exports = function( options ) {
     options = options || {};
-    options.sensitive = options.sensitive || false;
-    options.strict = options.strict || false;
-    options.end = options.end || false;
     
     /**
      * String decoder
@@ -36,7 +33,7 @@ exports = module.exports = function( options ) {
         
         return function( route, params ) {
             var res = reg.exec( route ),
-            params = ( params instanceof Object ) ? params : {};
+            	params = params || {};
             
             if ( !res )
                 return false;
