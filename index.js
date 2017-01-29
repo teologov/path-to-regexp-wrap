@@ -45,7 +45,7 @@ module.exports = function(options) {
         if (!res[i]) {
           continue;
         }  
-        params[keys[i - 1].name] = decodeUri(res[ i ]);
+        params[keys[i - 1].name] = decodeUri(res[i]);
       }
       
       return params;
