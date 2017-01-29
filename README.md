@@ -11,7 +11,8 @@ const route = '/get/:id';
 const match = path(route);
 
 const params = match('/get/1');
-console.log(params);      // returns {'id': '1'}
+// returns {'id': '1'}
+console.log(params);
     
 ```
 ### Options
