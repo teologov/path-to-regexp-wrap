@@ -35,7 +35,7 @@ module.exports = function(options) {
     
     return function(route, params) {
       const res = reg.exec(route);
-      const	params = params || {};
+      const params = params || {};
       
       if (!res) {
         return false;
