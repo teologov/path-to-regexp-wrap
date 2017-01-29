@@ -33,9 +33,9 @@ module.exports = function(options) {
     const keys = [];
     const reg = path.apply(this, [route, keys, options]);
     
-    return function(route, params) {
+    return function(route, config) {
       const res = reg.exec(route);
-      const params = params || {};
+      const params = config || {};
       
       if (!res) {
         return false;

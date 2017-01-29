@@ -7,10 +7,22 @@
 
 "use strict";
 
-describe('Testing path-to-regexp-wrap', () => {
+const path = require('../../')();    // options object could be passed as well 
 
-	it('Should pass', () => {
-		assert.isTrue(true);
+describe('Testing path-to-regexp-wrap', () => {
+	let route, match;
+	
+	beforeEach(() => {
+		route = '/get/:id';
+  	match = path(route);
+	});
+
+	afterEach(() => {
+		route = match = null;
+	})
+
+	it('Should match the path and return parameters object', () => {
+		assert.deepEqual(match('/get/1'), {id: '1'}, 'Should return matched parameters object');
 	});
 
 });
