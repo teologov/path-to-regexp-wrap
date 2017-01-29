@@ -6,9 +6,9 @@ It's a simple wrapper of original [path-to-regexp] (https://github.com/component
 ### Usage
 
 ```
-const path = require('path-to-regexp-wrap')(),    // options object could be passed as well 
-    route = '/get/:id',
-    match = path(route);
+const path = require('path-to-regexp-wrap')();    // options object could be passed as well 
+const route = '/get/:id';
+const match = path(route);
 
 const params = match('/get/1');
 console.log(params);      // returns {'id': '1'}
