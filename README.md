@@ -1,4 +1,5 @@
-### PATH-TO-REGEXP-WRAP
+### path-to-regexp-wrap
+[![Build Status](https://travis-ci.org/teologov/path-to-regexp-wrap.svg?branch=master)](https://travis-ci.org/teologov/path-to-regexp-wrap)
 It's a simple wrapper of original [path-to-regexp] (https://github.com/component/path-to-regexp) module.
 
 ### Usage
