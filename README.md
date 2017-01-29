@@ -6,11 +6,11 @@ It's a simple wrapper of original [path-to-regexp] (https://github.com/component
 ### Usage
 
 ```
-var path = require('path-to-regexp-wrap')(),    // options object could be passed as well 
+const path = require('path-to-regexp-wrap')(),    // options object could be passed as well 
     route = '/get/:id',
     match = path(route);
 
-var params = match('/get/1');
+const params = match('/get/1');
 console.log( params );      // returns { 'id': '1' }
     
 ```
