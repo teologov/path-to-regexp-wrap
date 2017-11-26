@@ -1,6 +1,6 @@
 /**
  * Path to regexp lib wrapper
- * @author Andrew Teologov <teologov.and@gmail.com>
+ * @author Andrey Teologov <teologov.and@gmail.com>
  * @date 16.04.14
  */
 
