@@ -39,16 +39,16 @@ describe('root url', () => {
     expect(path('/')('/')).to.deep.equal({}, 'Simple equal match');
   });
 
-  it('matches empty', () => {
-    expect(path('/')('')).to.deep.equal({}, 'Empty url = root');
+  it('shoudln\'t match empty parameter as root', () => {
+    expect(path('/')(''), 'parameter is not root').to.deep.false;
   });
 
   it.skip('matches asterisk', () => {
     expect(path('*')('/')).to.deep.equal({});
   });
 
-  it('matches asterisk after slash', () => {
-    expect(path('/*')('/')).to.deep.equal({}, 'Optional with asterisk');
+  it('matches wildcard asterisk after slash', () => {
+    expect(path('/(.*)')('/')).to.deep.equal({}, 'Optional with asterisk');
   });
 
   it('skips when no match', () => {
