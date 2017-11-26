@@ -20,3 +20,8 @@ console.log(params);
 * **options.sensitive** Defaults to false, set this to true to make routes case sensitive
 * **options.strict** Defaults to false, set this to true to make the trailing slash matter.
 * **options.end** Defaults to true, set this to false to only match the prefix of the URL.
+
+* Advanced options (use for non-pathname strings, e.g. host names):
+    * **delimiter** The default delimiter for segments. (default: '/')
+    * **endsWith** Optional character, or list of characters, to treat as "end" characters.
+    * **delimiters** List of characters to consider delimiters when parsing. (default: './')
