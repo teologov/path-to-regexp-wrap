@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "path-to-regexp": "*"
+    "path-to-regexp": "0.1.7"
   },
   "license": "MIT",
   "bugs": {
