@@ -1,6 +1,6 @@
 {
   "name": "path-to-regexp-wrap",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Andrey Teologov <teologov.and@gmail.com> (https://teologov.me/)",
   "description": "Wrapper for Express.js 'path-to-regexp' module",
   "repository": {
